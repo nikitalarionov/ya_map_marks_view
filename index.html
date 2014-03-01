@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/vendor/underscore.js"></script>
+        <script type="text/javascript" src="js/vendor/backbone.js"></script>
+        <script src="http://api-maps.yandex.ru/2.0.9/?load=package.standard&lang=ru-RU&id=map" type="text/javascript"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+    <div class="map__block clearfix">
+        <div class="map__holder" id="map"></div>
+        <div class="office__description"></div>
+    </div>
+    <div class="map__city-block clearfix"></div>
+    <script type="foo/bar" id="City-List">
+        <%= element %>
+    </script>
+    <script type="foo/bar" id="CityTemplate">
+        <%= name %>
+    </script>
+    <script type="foo/bar" id="CityDescription">
+        <h1 class="office__city">
+            <%= name %>
+        </h1>
+        <hr class="office__line" />
+        <div class="office_description-block clearfix">
+            <div class="office_description-block_photo">
+                <img src="<%= pic %>" alt=""/>
+            </div>
+            <div class="office_contact office__description-block__item">
+                <ul>
+                    <li><a class="office__contact-name" href="#"><%= contact_name %></a></li>
+                    <li><%= nick %></li>
+                    <li><%= phone %></li>
+                    <li><%= city %></li>
+                    <li><%= address %></li>
+                    <li><a class="office__contact-name"  href="mailto:<%= email %>"><%= email %></a></li>
+                </ul>
+                <ul>
+                    <li><%= description %></li>
+                    <li><a class="office__contact-name" href="<%= site %>"><%= site %></a></li>
+                </ul>
+            </div>
+        </div>
+    </script>
+    <script type="foo/bar" id="OfficeDescription">
+        <div class="office_description-block clearfix">
+            <hr class="office__line" />
+            <div class="office_description-block_photo">
+                <img src="<%= pic %>" alt=""/>
+            </div>
+            <div class="office_contact office__description-block__item">
+                <ul>
+                    <li><a class="office__contact-name" href="#"><%= contact_name %></a></li>
+                    <li><%= nick %></li>
+                    <li><%= phone %></li>
+                    <li><%= city %></li>
+                    <li><%= address %></li>
+                    <li><a class="office__contact-name"  href="mailto:<%= email %>"><%= email %></a></li>
+                </ul>
+                <ul>
+                    <li><%= description %></li>
+                    <li><a class="office__contact-name" href="<%= site %>"><%= site %></a></li>
+                </ul>
+            </div>
+        </div>
+    </script>
+    </body>
+</html>
